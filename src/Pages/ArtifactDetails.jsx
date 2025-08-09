@@ -33,6 +33,8 @@ const ArtifactDetails = () => {
     }
   }, [singleArtifact, user]);
 
+  console.log(singleArtifact, id);
+
   const handleLike = () => {
     const email = user?.email;
     axios
@@ -51,7 +53,7 @@ const ArtifactDetails = () => {
       axios
         .delete(`${import.meta.env.VITE_BASE_URL}/likes/${id}`)
         .then((res) => {
-          console.log("new collection", res.data);
+          console.log("delete collection", res.data);
         })
         .catch((err) => {
           console.log(err);

@@ -38,13 +38,15 @@ const MyLikePage = () => {
         // setLoading(false);
       });
     }
-  }, [setMyLikes, user]);
+  }, [setMyLikes, user?.email, user]);
 
-  // console.log(myLikes);
+  console.log(myLikes);
 
   if (loading) {
     return <Loading></Loading>;
   }
+
+  console.log(myLikes);
 
   // if(myLikes.length === 0) {
   //   return <NoData></NoData>;
@@ -73,9 +75,7 @@ const MyLikePage = () => {
               </p>
 
               <div className="flex justify-between items-center">
-                <span className="flex items-center gap-1 text-sm font-semibold px-5 py-2 rounded-xl bg-gradient-to-l from-pink-600 to-pink-400 text-white shadow hover:scale-105 transition">
-                  ❤️ Likes: {like?.likes?.length}
-                </span>
+                
 
                 <Link to={`/artifact-details/${like?.likeId}`}>
                   <button className="cursor-pointer text-white bg-gradient-to-r from-indigo-600 to-purple-600 px-5 py-2 rounded-md text-sm hover:scale-105 transition-transform">
