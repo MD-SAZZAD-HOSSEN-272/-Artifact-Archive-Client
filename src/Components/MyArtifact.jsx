@@ -54,7 +54,7 @@ const MyArtifact = ({
     <div>
       {/* artifact grid */}
 
-      <div className="bg-[#4a362a] bg-opacity-80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.01] transition-all duration-300 text-white w-full">
+      <div className=" dark:bg-gray-800 bg-opacity-80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.01] transition-all duration-300 text-white w-full">
         <img
           src={artifact?.photo}
           alt="artifact Image"

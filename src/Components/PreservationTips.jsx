@@ -31,17 +31,17 @@ const PreservationTips = () => {
   }, [])
 
   return (
-    <section  className="bg-[#4a362a] bg-opacity-80 backdrop-blur-sm p-8 rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.01] transition-all duration-300 text-white w-full">
+    <section  className="dark:bg-gray-700 bg-opacity-80 backdrop-blur-sm p-8 rounded-2xl overflow-hidden   text-white w-full">
       <h2 className="text-3xl font-bold text-center mb-8">🛡️ Preservation Tips</h2>
       <div className="grid md:grid-cols-3 gap-8">
         {tips.map((tip, index) => (
           <div data-aos="fade-left"
             key={index}
-            className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center"
+            className=" dark:bg-gray-400 p-6 rounded-xl shadow-xl hover:shadow-2xl text-center hover:scale-[1.01] transition-all duration-300"
           >
             <div className="mb-4 flex justify-center">{tip.icon}</div>
-            <h3 className="text-xl font-semibold mb-2">{tip.title}</h3>
-            <p className="text-gray-600">{tip.description}</p>
+            <h3 className="text-xl font-bold mb-2">{tip.title}</h3>
+            <p className=" dark:text-gray-600">{tip.description}</p>
           </div>
         ))}
       </div>

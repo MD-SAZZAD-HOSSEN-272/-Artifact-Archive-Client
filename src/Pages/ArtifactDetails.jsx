@@ -93,7 +93,7 @@ const ArtifactDetails = () => {
       >
         Go Back
       </button>
-      <div className="card card-side mt-5 bg-[#4a362a] bg-opacity-90 backdrop-blur-md text-white shadow-lg rounded-2xl px-6 flex justify-between items-center w-full max-w-6xl mx-auto transition-all duration-300 hover:shadow-2xl flex-col lg:flex-row">
+      <div className="card card-side mt-5 dark:bg-gray-800 bg-opacity-90 backdrop-blur-md text-white shadow-lg rounded-2xl px-6 flex justify-between items-center w-full max-w-6xl mx-auto transition-all duration-300 hover:shadow-2xl flex-col lg:flex-row">
         <figure className="lg:w-1/2 px-10 py-4">
           <img
             className="rounded-2xl h-full shadow-md"

@@ -23,7 +23,7 @@ const Artifacts = () => {
   }
 
   return <div>
-    <h1 className="text-5xl text-center font-bold text-primary">Featured Artifacts</h1>
+    <h1 className="text-5xl text-center font-bold text-white">Featured Artifacts</h1>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         {
             artifacts?.map(artifact => <Artifact key={artifact._id} artifact = {artifact}></Artifact>)

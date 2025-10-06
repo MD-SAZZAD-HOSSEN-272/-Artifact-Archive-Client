@@ -65,13 +65,13 @@ const Register = () => {
   };
 
   return (
-    <div className="hero bg-[#4a362a] min-h-screen rounded-2xl">
+    <div className="hero dark:bg-gray-800 min-h-screen rounded-2xl">
       <title>Register</title>
       <div className="hero-content flex-col lg:flex-row-reverse justify-center gap-10">
         <div data-aos="fade-left" className="text-center lg:text-left lg:w-1/2">
           <Lottie animationData={register} loop={true}></Lottie>
         </div>
-        <div data-aos="fade-right" className="card bg-gradient-to-br pb-10 from-[#2e1f0e]/50 via-[#3c2c1a]/50 to-[#6e4f2a]/50 backdrop-blur-xl shrink-0 shadow-2xl p-5 text-center lg:w-1/2">
+        <div data-aos="fade-right" className="card bg-gradient-to-br pb-10 from-gray-900/50 via-gray-600/50 to-[#6e4f2a]/50 backdrop-blur-xl shrink-0 shadow-2xl p-5 text-center lg:w-1/2">
           <h1 className="text-5xl font-bold">Register now!</h1>
           <div className="card-body w-full">
             <form onSubmit={handleRegister} className="fieldset">

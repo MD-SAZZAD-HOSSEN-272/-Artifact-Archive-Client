@@ -9,7 +9,7 @@ const Footer = () => {
   }, [])
 
   return (
-    <footer className="bg-[#3d2b1f] text-white mt-20 rounded-2xl">
+    <footer className="dark:bg-gray-800 text-white mt-20 rounded-2xl shadow-2xl">
       <div className="max-w-7xl mx-auto text-center md:text-left px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 border-t border-[#ffffff1a]">
         {/* Left Section */}
         <div className="space-y-3">

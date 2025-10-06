@@ -47,13 +47,13 @@ const Login = () => {
   };
 
   return (
-    <div className="hero bg-[#4a362a] min-h-screen rounded-2xl">
+    <div className="hero dark:bg-gray-800 min-h-screen rounded-2xl">
       <title>Login</title>
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div data-aos="fade-left" className="text-center lg:text-left lg:w-1/2">
           <Lottie animationData={login} loop={true}></Lottie>
         </div>
-        <div data-aos="fade-right" className="card lg:w-1/2 bg-gradient-to-br pb-10 from-[#2e1f0e]/50 via-[#3c2c1a]/50 to-[#6e4f2a]/50 backdrop-blur-xl shrink-0 shadow-2xl p-5 text-center">
+        <div data-aos="fade-right" className="card lg:w-1/2 bg-gradient-to-br pb-10 from-gray-900/50 via-gray-700/50 to-[#6e4f2a]/50 backdrop-blur-xl shrink-0 shadow-2xl p-5 text-center">
           <h1 className="text-5xl font-bold">Login now!</h1>
           <div className="card-body">
             <form onSubmit={handleLogin} className="fieldset">

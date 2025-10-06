@@ -33,12 +33,12 @@ const FeatureTime = () => {
 
   return (
     <section className="my-16 px-4">
-      <h2 className="text-3xl font-bold text-center mb-8">🌍 Featured Time Periods</h2>
+      <h2 className="text-3xl font-bold text-center text-white mb-8">🌍 Featured Time Periods</h2>
       <div className="grid md:grid-cols-3 gap-8">
         {periods.map((period, index) => (
           <div data-aos="fade-up"
             key={index}
-            className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 text-center"
+            className=" dark:bg-gray-700 p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 text-center"
           >
             <div className="mb-4 flex justify-center">{period.icon}</div>
             <h3 className="text-xl font-semibold mb-2">{period.title}</h3>
