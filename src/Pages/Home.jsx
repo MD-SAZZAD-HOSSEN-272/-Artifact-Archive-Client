@@ -4,6 +4,7 @@ import Banner from '../Components/Banner'
 import FeatureTime from '../Components/FeatureTime';
 import PreservationTips from '../Components/PreservationTips';
 import { Helmet } from 'react-helmet-async';
+import History from '../Components/History';
 
 const Home = () => {
     return (
@@ -14,11 +15,15 @@ const Home = () => {
             <section>
                 <Banner></Banner>
             </section>
+            
             <section>
                 <Artifacts></Artifacts>
             </section>
             <section>
                 <FeatureTime></FeatureTime>
+            </section>
+            <section>
+                <History></History>
             </section>
             <section>
                 <PreservationTips></PreservationTips>
